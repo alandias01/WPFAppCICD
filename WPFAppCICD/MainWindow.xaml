@@ -13,5 +13,7 @@
         <Label x:Name="label3" Content="SideProject: " HorizontalAlignment="Left" Margin="25,40,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label4" Content="{Binding SideProjectObjectAssemblyVersionLabel}" HorizontalAlignment="Left" Margin="115,40,0,0" VerticalAlignment="Top"/>
 
+        <Label x:Name="label5" Content="Feature Branch: " HorizontalAlignment="Left" Margin="25,60,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
