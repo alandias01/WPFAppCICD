@@ -7,8 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Label x:Name="label1" Content="Version: " HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2" Content="{Binding AssemblyVersionLabel}" HorizontalAlignment="Left" Margin="85,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="WPFAppCICD: " HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="{Binding WPFAppCICDAssemblyVersionLabel}" HorizontalAlignment="Left" Margin="115,20,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="label3" Content="SideProject: " HorizontalAlignment="Left" Margin="25,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="{Binding SideProjectObjectAssemblyVersionLabel}" HorizontalAlignment="Left" Margin="115,40,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

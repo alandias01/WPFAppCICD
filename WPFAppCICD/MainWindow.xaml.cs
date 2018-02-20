@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SideProject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,12 +29,17 @@ namespace WPFAppCICD
     }
 
     public class MainWindowViewModel
-    {        
+    {
+        private SideProjectObject SPObject = new SideProjectObject();
+
         public MainWindowViewModel()
         {
-            this.AssemblyVersionLabel = typeof(MainWindow).Assembly.GetName().Version.ToString();
+            this.WPFAppCICDAssemblyVersionLabel = typeof(MainWindow).Assembly.GetName().Version.ToString();
+            this.SideProjectObjectAssemblyVersionLabel = SPObject.AssemblyVersionLabel;
         }
 
-        public string AssemblyVersionLabel { get; set; }
+        public string WPFAppCICDAssemblyVersionLabel { get; set; }        
+
+        public string SideProjectObjectAssemblyVersionLabel { get; set; }
     }
 }
