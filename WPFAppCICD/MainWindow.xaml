@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Label x:Name="label1" Content="Version: " HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="{Binding AssemblyVersionLabel}" HorizontalAlignment="Left" Margin="85,20,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

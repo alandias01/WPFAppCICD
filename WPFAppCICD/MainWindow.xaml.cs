@@ -23,6 +23,17 @@ namespace WPFAppCICD
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();
         }
+    }
+
+    public class MainWindowViewModel
+    {        
+        public MainWindowViewModel()
+        {
+            this.AssemblyVersionLabel = typeof(MainWindow).Assembly.GetName().Version.ToString();
+        }
+
+        public string AssemblyVersionLabel { get; set; }
     }
 }
